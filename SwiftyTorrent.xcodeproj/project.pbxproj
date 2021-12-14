@@ -58,9 +58,6 @@
 		7748DCAB24AE4E1900AC5095 /* File+UTI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCAA24AE4E1900AC5095 /* File+UTI.swift */; };
 		7748DCE324AE728700AC5095 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCE224AE728700AC5095 /* PreviewItem.swift */; };
 		7774227E267BA87A008FAA57 /* MediaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */; };
-		77742295267C010F008FAA57 /* StubTorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742294267C010F008FAA57 /* StubTorrentManager.swift */; };
-		77742299267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */; };
-		7774229C267C0191008FAA57 /* StubEZTVDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */; };
 		777A0E4E24AF8D8C00713146 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E4D24AF8D8C00713146 /* libxml2.tbd */; };
 		777A0E5024AF8D9300713146 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E4F24AF8D9300713146 /* libiconv.tbd */; };
 		777A0E5224AF8D9A00713146 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5124AF8D9A00713146 /* libc++.tbd */; };
@@ -188,9 +185,6 @@
 		7748DCAA24AE4E1900AC5095 /* File+UTI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+UTI.swift"; sourceTree = "<group>"; };
 		7748DCE224AE728700AC5095 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
 		776FD9F622C3B43800CD7CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		77742294267C010F008FAA57 /* StubTorrentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTorrentManager.swift; sourceTree = "<group>"; };
-		77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubIMDBDataProvider.swift; sourceTree = "<group>"; };
-		7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubEZTVDataProvider.swift; sourceTree = "<group>"; };
 		777A0E4D24AF8D8C00713146 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		777A0E4F24AF8D9300713146 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libiconv.tbd; sourceTree = DEVELOPER_DIR; };
 		777A0E5124AF8D9A00713146 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
@@ -303,7 +297,6 @@
 				7723376322DB9331008ECD5F /* Core */,
 				774321EE24AB43E500777C0A /* Models */,
 				77D8122322CA336A001CA13E /* UI */,
-				77742297267C0119008FAA57 /* Stubs */,
 				773FF97222C10B22008D58E4 /* Resources */,
 				773FF95B22C10279008D58E4 /* Info.plist */,
 			);
@@ -452,16 +445,6 @@
 				77ED892324ACE20700D499DD /* QLViewHost.swift */,
 			);
 			path = QuickLook;
-			sourceTree = "<group>";
-		};
-		77742297267C0119008FAA57 /* Stubs */ = {
-			isa = PBXGroup;
-			children = (
-				77742294267C010F008FAA57 /* StubTorrentManager.swift */,
-				77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */,
-				7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */,
-			);
-			path = Stubs;
 			sourceTree = "<group>";
 		};
 		77D8122322CA336A001CA13E /* UI */ = {
@@ -695,7 +678,6 @@
 				773FF94E22C10278008D58E4 /* AppDelegate.swift in Sources */,
 				77AD95472678CAFB00B57B0B /* SettingsViewModel.swift in Sources */,
 				774321E324AA58F600777C0A /* MainView.swift in Sources */,
-				77742295267C010F008FAA57 /* StubTorrentManager.swift in Sources */,
 				774321E724AA705A00777C0A /* SearchViewModel.swift in Sources */,
 				774321D624AA4A0E00777C0A /* File.swift in Sources */,
 				773FF95022C10278008D58E4 /* SceneDelegate.swift in Sources */,
@@ -711,11 +693,9 @@
 				7748DCA924AE3C9000AC5095 /* File+PreviewItem.swift in Sources */,
 				772CEA0822DDFC41000CD2BD /* FilesViewModel.swift in Sources */,
 				77E4CA0824AB747500C21354 /* SearchRow.swift in Sources */,
-				7774229C267C0191008FAA57 /* StubEZTVDataProvider.swift in Sources */,
 				7748DCAB24AE4E1900AC5095 /* File+UTI.swift in Sources */,
 				772CEA0A22DDFC47000CD2BD /* FileRow.swift in Sources */,
 				774321E924AA9A0E00777C0A /* IMDBDataProvider.swift in Sources */,
-				77742299267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */,
 				772CEA0C22DDFC4D000CD2BD /* FileRowModel.swift in Sources */,
 				77AD95432678CAEF00B57B0B /* SettingsView.swift in Sources */,
 			);

@@ -1,0 +1,5 @@
+project: SwiftyTorrent.xcodeproj
+schemes:
+- SwiftyTorrent
+targets:
+- SwiftyTorrent

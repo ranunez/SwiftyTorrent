@@ -13,11 +13,7 @@ import Combine
 
 extension String: Error { }
 
-protocol IMDBDataProviderProtocol {
-    func fetchSuggestions(_ query: String) -> AnyPublisher<String, Error>
-}
-
-final class IMDBDataProvider: IMDBDataProviderProtocol {
+final class IMDBDataProvider {
 
     private let urlSession: URLSession = URLSession.shared
     private let endpointURL = URL(string: "https://sg.media-imdb.com/")!
@@ -75,19 +71,13 @@ extension IMDBDataProvider {
     struct Response: Decodable {
         
         enum CodingKeys: String, CodingKey {
-            case version = "v"
-            case query = "q"
             case data = "d"
         }
         
-        let version: Int
-        let query: String
         let data: [DataItem]
         
         init(from decoder: Decoder) throws {
             let values = try decoder.container(keyedBy: CodingKeys.self)
-            version = try values.decode(Int.self, forKey: .version)
-            query = try values.decode(String.self, forKey: .query)
             data = try values.decode([DataItem].self, forKey: .data)
         }
         
@@ -98,12 +88,10 @@ extension IMDBDataProvider {
                 case id = "id"
             }
             
-            let label: String
             let id: String
             
             init(from decoder: Decoder) throws {
                 let values = try decoder.container(keyedBy: CodingKeys.self)
-                label = try values.decode(String.self, forKey: .label)
                 id = try values.decode(String.self, forKey: .id)
             }
             

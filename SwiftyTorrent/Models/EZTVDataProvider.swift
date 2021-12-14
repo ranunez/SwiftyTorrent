@@ -48,11 +48,7 @@ extension EZTVDataProvider.Response.Torrent: SearchDataItem {
 
 }
 
-protocol EZTVDataProviderProtocol {
-    func fetchTorrents(imdbId: String, page: Int) -> AnyPublisher<[SearchDataItem], Error>
-}
-
-final class EZTVDataProvider: EZTVDataProviderProtocol {
+final class EZTVDataProvider {
 
     static let endpoint = "https://eztv.re/api/"
 
@@ -102,17 +98,13 @@ extension EZTVDataProvider {
             case torrents
         }
         
-        let imdbId: String
         let torrentsCount: Int
         let limit: Int
         let page: Int
         let torrents: [Torrent]
-        
-        var hasMorePages: Bool { page * limit < torrentsCount }
-        
+                
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
-            imdbId = try container.decode(String.self, forKey: .imdbId)
             torrentsCount = try container.decode(Int.self, forKey: .torrentsCount)
             limit = try container.decode(Int.self, forKey: .limit)
             page = try container.decode(Int.self, forKey: .page)
@@ -141,21 +133,12 @@ extension EZTVDataProvider {
                 case sizeBytes = "size_bytes"
             }
             
-//            let id: Int
-//            let hash: String
-//            let fileName: String
-//            let episodeURL: URL
-            let torrentURL: URL
             let magnetURL: URL
             let title: String
-//            let imdbId: String
             let season: String
             let episode: String
-//            let smallThumb: URL
-//            let largeThumb: URL
             let seeds: Int
             let peers: Int
-//            let releaseDate: TimeInterval
             let sizeBytes: UInt64
             
             var debugDescription: String {
@@ -164,13 +147,6 @@ extension EZTVDataProvider {
             
             init(from decoder: Decoder) throws {
                 let container = try decoder.container(keyedBy: CodingKeys.self)
-                if let rawValue = try? container.decode(String.self, forKey: .torrentURL),
-                   let encodedValue = rawValue.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed),
-                   let URL = URL(string: encodedValue) {
-                    torrentURL = URL
-                } else {
-                    throw "Bad torrentURL"
-                }
                 magnetURL = try container.decode(URL.self, forKey: .magnetURL)
                 title = try container.decode(String.self, forKey: .title)
                 season = try container.decode(String.self, forKey: .season)

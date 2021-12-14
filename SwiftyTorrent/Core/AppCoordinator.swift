@@ -11,11 +11,7 @@ import SwiftUI
 import Combine
 import TorrentKit
 
-protocol ApplicationCoordinator {
-    func start()
-}
-
-final class AppCoordinator: ApplicationCoordinator {
+final class AppCoordinator {
     
     private var window: UIWindow!
     

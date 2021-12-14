@@ -10,23 +10,14 @@ import Foundation
 import TorrentKit
 
 protocol FileProtocol: FileRowModel {
-
     var name: String { get }
-    
-    var path: String { get }
-    
-    func recursiveDescription(_ level: Int)
-    
 }
 
 extension FileProtocol {
-    
     var title: String { name }
-
 }
 
-public class File: NSObject, FileProtocol {
-
+class File: NSObject, FileProtocol {
     let name: String
     let path: String
     var sizeDetails: String?
@@ -37,13 +28,8 @@ public class File: NSObject, FileProtocol {
         self.sizeDetails = ByteCountFormatter.string(fromByteCount: Int64(size), countStyle: .file)
     }
     
-    public override var description: String {
+    override var description: String {
         return name //+ " (\(path))"
-    }
-    
-    func recursiveDescription(_ level: Int) {
-        let tab = String(repeating: "\t", count: level)
-        print(tab + "⎜" + description)
     }
 }
 
@@ -53,7 +39,7 @@ extension File: Identifiable {
 
 }
 
-public class Directory: FileProtocol, CustomStringConvertible {
+class Directory: FileProtocol, CustomStringConvertible {
     
     let name: String
     let path: String
@@ -77,27 +63,8 @@ public class Directory: FileProtocol, CustomStringConvertible {
         self.files = files ?? []
     }
     
-    public var description: String {
+    var description: String {
         return name
-    }
-    
-    func recursiveDescription(_ level: Int) {
-        let tab = String(repeating: "\t", count: level)
-        print(tab + "⎣" + description)
-        
-        // print all subdiectories first
-        func nameOrder(lhs: FileProtocol, rhs: FileProtocol) -> Bool {
-            return lhs.name < rhs.name
-        }
-        
-        for dir in allSubDirectories.sorted(by: nameOrder) {
-            dir.recursiveDescription(level + 1)
-        }
-        
-        // all files after
-        for file in allFiles.sorted(by: nameOrder) {
-            file.recursiveDescription(level + 1)
-        }
     }
     
     class func directory(from fileEntries: [FileEntry]) -> Directory {
