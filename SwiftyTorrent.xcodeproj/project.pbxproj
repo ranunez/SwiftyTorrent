@@ -251,8 +251,6 @@
 		7748DCC024AE703000AC5095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7748DCE224AE728700AC5095 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
 		776FD9F622C3B43800CD7CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7774227B267BA866008FAA57 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
-		7774227F267BA89C008FAA57 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/tvOS/Swinject.framework; sourceTree = "<group>"; };
 		77742294267C010F008FAA57 /* StubTorrentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTorrentManager.swift; sourceTree = "<group>"; };
 		77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubIMDBDataProvider.swift; sourceTree = "<group>"; };
 		7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubEZTVDataProvider.swift; sourceTree = "<group>"; };
@@ -400,8 +398,6 @@
 			children = (
 				773EFD1E26B241D600DC35A4 /* TVVLCKit.xcframework */,
 				773EFD1626B2414100DC35A4 /* MobileVLCKit.xcframework */,
-				7774227B267BA866008FAA57 /* Swinject.framework */,
-				7774227F267BA89C008FAA57 /* Swinject.framework */,
 				7723A22424AF8F1B007629A0 /* SystemConfiguration.framework */,
 				777A0E6D24AF8E0200713146 /* AVFoundation.framework */,
 				777A0E6B24AF8DFC00713146 /* AudioToolbox.framework */,
@@ -821,13 +817,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/SwiftyTV/input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Carthage;
 			outputFileListPaths = (
-				"$(SRCROOT)/SwiftyTV/output.xcfilelist",
 			);
 			outputPaths = (
 			);
