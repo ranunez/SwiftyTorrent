@@ -84,15 +84,7 @@
 		7748DCDD24AE713500AC5095 /* TorrentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774321A724AA37ED00777C0A /* TorrentKit.framework */; };
 		7748DCDE24AE713500AC5095 /* TorrentKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774321A724AA37ED00777C0A /* TorrentKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7748DCE324AE728700AC5095 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCE224AE728700AC5095 /* PreviewItem.swift */; };
-		7774227D267BA866008FAA57 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774227B267BA866008FAA57 /* Swinject.framework */; };
 		7774227E267BA87A008FAA57 /* MediaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */; };
-		77742280267BA89C008FAA57 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7774227F267BA89C008FAA57 /* Swinject.framework */; };
-		77742284267BA9CB008FAA57 /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 77742283267BA9CB008FAA57 /* input.xcfilelist */; };
-		77742286267BA9DF008FAA57 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 77742285267BA9DF008FAA57 /* output.xcfilelist */; };
-		77742289267BAA38008FAA57 /* output.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 77742287267BAA38008FAA57 /* output.xcfilelist */; };
-		7774228A267BAA38008FAA57 /* input.xcfilelist in Resources */ = {isa = PBXBuildFile; fileRef = 77742288267BAA38008FAA57 /* input.xcfilelist */; };
-		7774228C267BB037008FAA57 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774228B267BB037008FAA57 /* AppAssembly.swift */; };
-		7774228D267BB037008FAA57 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774228B267BB037008FAA57 /* AppAssembly.swift */; };
 		77742295267C010F008FAA57 /* StubTorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742294267C010F008FAA57 /* StubTorrentManager.swift */; };
 		77742296267C010F008FAA57 /* StubTorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742294267C010F008FAA57 /* StubTorrentManager.swift */; };
 		77742299267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */; };
@@ -261,11 +253,6 @@
 		776FD9F622C3B43800CD7CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7774227B267BA866008FAA57 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 		7774227F267BA89C008FAA57 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/tvOS/Swinject.framework; sourceTree = "<group>"; };
-		77742283267BA9CB008FAA57 /* input.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
-		77742285267BA9DF008FAA57 /* output.xcfilelist */ = {isa = PBXFileReference; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
-		77742287267BAA38008FAA57 /* output.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = output.xcfilelist; sourceTree = "<group>"; };
-		77742288267BAA38008FAA57 /* input.xcfilelist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcfilelist; path = input.xcfilelist; sourceTree = "<group>"; };
-		7774228B267BB037008FAA57 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		77742294267C010F008FAA57 /* StubTorrentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTorrentManager.swift; sourceTree = "<group>"; };
 		77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubIMDBDataProvider.swift; sourceTree = "<group>"; };
 		7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubEZTVDataProvider.swift; sourceTree = "<group>"; };
@@ -302,7 +289,6 @@
 			files = (
 				774321AE24AA37EE00777C0A /* TorrentKit.framework in Frameworks */,
 				7774227E267BA87A008FAA57 /* MediaKit.framework in Frameworks */,
-				7774227D267BA866008FAA57 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +331,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77742280267BA89C008FAA57 /* Swinject.framework in Frameworks */,
 				7748DCDD24AE713500AC5095 /* TorrentKit.framework in Frameworks */,
 				7748DCD924AE713500AC5095 /* MediaKit.framework in Frameworks */,
 			);
@@ -360,7 +345,6 @@
 				773FF94D22C10278008D58E4 /* AppDelegate.swift */,
 				773FF94F22C10278008D58E4 /* SceneDelegate.swift */,
 				77FC2AF322D896F100A544AA /* AppCoordinator.swift */,
-				7774228B267BB037008FAA57 /* AppAssembly.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -401,8 +385,6 @@
 		773FF94C22C10278008D58E4 /* SwiftyTorrent */ = {
 			isa = PBXGroup;
 			children = (
-				77742283267BA9CB008FAA57 /* input.xcfilelist */,
-				77742285267BA9DF008FAA57 /* output.xcfilelist */,
 				7723376322DB9331008ECD5F /* Core */,
 				774321EE24AB43E500777C0A /* Models */,
 				77D8122322CA336A001CA13E /* UI */,
@@ -562,8 +544,6 @@
 		7748DCB324AE702E00AC5095 /* SwiftyTV */ = {
 			isa = PBXGroup;
 			children = (
-				77742288267BAA38008FAA57 /* input.xcfilelist */,
-				77742287267BAA38008FAA57 /* output.xcfilelist */,
 				7748DCB424AE702E00AC5095 /* AppDelegate.swift */,
 				773A410124AF9462002E75CD /* Resources */,
 				7748DCC024AE703000AC5095 /* Info.plist */,
@@ -637,7 +617,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 773FF95E22C10279008D58E4 /* Build configuration list for PBXNativeTarget "SwiftyTorrent" */;
 			buildPhases = (
-				4D28A55B245D8DF200CBDC78 /* Run SwiftLint */,
 				773FF94622C10278008D58E4 /* Sources */,
 				773FF94722C10278008D58E4 /* Frameworks */,
 				773FF94822C10278008D58E4 /* Resources */,
@@ -787,8 +766,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				771B700622DA205D00132B5E /* uTorrent-320.png in Resources */,
-				77742286267BA9DF008FAA57 /* output.xcfilelist in Resources */,
-				77742284267BA9CB008FAA57 /* input.xcfilelist in Resources */,
 				773FF95A22C10279008D58E4 /* LaunchScreen.storyboard in Resources */,
 				773FF95422C10279008D58E4 /* Assets.xcassets in Resources */,
 			);
@@ -813,46 +790,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7774228A267BAA38008FAA57 /* input.xcfilelist in Resources */,
 				7748DCBF24AE703000AC5095 /* LaunchScreen.storyboard in Resources */,
-				77742289267BAA38008FAA57 /* output.xcfilelist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D28A55B245D8DF200CBDC78 /* Run SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
 		77742281267BA960008FAA57 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"$(SRCROOT)/SwiftyTorrent/input.xcfilelist",
 			);
 			inputPaths = (
 			);
 			name = Carthage;
 			outputFileListPaths = (
-				"$(SRCROOT)/SwiftyTorrent/output.xcfilelist",
 			);
 			outputPaths = (
 			);
@@ -911,7 +866,6 @@
 				772CEA0A22DDFC47000CD2BD /* FileRow.swift in Sources */,
 				774321E924AA9A0E00777C0A /* IMDBDataProvider.swift in Sources */,
 				77742299267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */,
-				7774228C267BB037008FAA57 /* AppAssembly.swift in Sources */,
 				772CEA0C22DDFC4D000CD2BD /* FileRowModel.swift in Sources */,
 				77AD95432678CAEF00B57B0B /* SettingsView.swift in Sources */,
 			);
@@ -957,7 +911,6 @@
 				7774229A267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */,
 				7748DCCA24AE70A900AC5095 /* IMDBDataProvider.swift in Sources */,
 				7748DCD324AE70A900AC5095 /* TorrentRowModel.swift in Sources */,
-				7774228D267BB037008FAA57 /* AppAssembly.swift in Sources */,
 				7748DCD124AE70A900AC5095 /* TorrentsViewModel.swift in Sources */,
 				7748DCD624AE70A900AC5095 /* FileRow.swift in Sources */,
 				7748DCC724AE70A900AC5095 /* File.swift in Sources */,

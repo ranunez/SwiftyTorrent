@@ -12,17 +12,17 @@ import Combine
 import TorrentKit
 
 protocol ApplicationCoordinator {
-
     func start()
-    
 }
 
 final class AppCoordinator: ApplicationCoordinator {
     
     private var window: UIWindow!
+    
     private var torrentManager: TorrentManagerProtocol {
-        resolveComponent(TorrentManagerProtocol.self)
+        TorrentManager.shared()
     }
+    
     private var cancellables = [Cancellable]()
     
     init(window: UIWindow) {
@@ -48,8 +48,6 @@ final class AppCoordinator: ApplicationCoordinator {
     // MARK: - ApplicationCoordinator
     
     func start() {
-        registerDependencies()
-        
         window.rootViewController = UIHostingController(rootView: MainView())
         window.makeKeyAndVisible()
         

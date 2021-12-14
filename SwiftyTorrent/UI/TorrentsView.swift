@@ -75,14 +75,3 @@ extension Alert {
         )
     }
 }
-
-#if DEBUG
-struct TorrentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Use stubs
-        registerStubs()
-        let model = TorrentsViewModel()
-        return TorrentsView(model: model).environment(\.colorScheme, .dark)
-    }
-}
-#endif

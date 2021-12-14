@@ -11,7 +11,7 @@ import TorrentKit
 extension Torrent {
     
     private var torrentManager: TorrentManagerProtocol {
-        resolveComponent(TorrentManagerProtocol.self)        
+        TorrentManager.shared()
     }
     
     private static var filesCache = [Data: [FileEntry]]()

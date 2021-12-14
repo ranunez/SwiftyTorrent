@@ -12,7 +12,7 @@ import TorrentKit
 
 final class TorrentsViewModel: NSObject, ObservableObject, TorrentManagerDelegate {
     
-    private let torrentManager = resolveComponent(TorrentManagerProtocol.self)
+    private let torrentManager = TorrentManager.shared()
 
     private(set) var torrents = [Torrent]()
 

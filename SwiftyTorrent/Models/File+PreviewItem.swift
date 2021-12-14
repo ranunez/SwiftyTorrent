@@ -13,7 +13,7 @@ import TorrentKit
 extension File: PreviewItem {
     
     private var torrentManager: TorrentManagerProtocol {
-        resolveComponent(TorrentManagerProtocol.self)
+        TorrentManager.shared()
     }
     
     public var previewItemURL: URL? {

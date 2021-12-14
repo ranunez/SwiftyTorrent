@@ -19,9 +19,9 @@ final class SearchViewModel: ObservableObject {
     private var currentPage = 1
     private var hasMorePages = false
     
-    private let imdbProvider = resolveComponent(IMDBDataProviderProtocol.self)
-    private let eztbProvider = resolveComponent(EZTVDataProviderProtocol.self)
-    private let torrentManager = resolveComponent(TorrentManagerProtocol.self)
+    private let imdbProvider = IMDBDataProvider()
+    private let eztbProvider = EZTVDataProvider()
+    private let torrentManager = TorrentManager.shared()
     
     private var cancellables = [AnyCancellable]()
     

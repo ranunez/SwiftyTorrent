@@ -39,13 +39,3 @@ struct SearchView: View {
     }
 
 }
-
-#if DEBUG
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Use stubs
-        registerStubs()
-        return SearchView(model: SearchViewModel())
-    }
-}
-#endif
