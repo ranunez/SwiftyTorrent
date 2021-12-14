@@ -63,7 +63,6 @@
 		777A0E5624AF8DA700713146 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5524AF8DA700713146 /* VideoToolbox.framework */; };
 		777A0E5824AF8DAD00713146 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5724AF8DAD00713146 /* Security.framework */; };
 		777A0E5A24AF8DB400713146 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5924AF8DB400713146 /* QuartzCore.framework */; };
-		777A0E5C24AF8DBC00713146 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5B24AF8DBB00713146 /* OpenGLES.framework */; };
 		777A0E5E24AF8DCB00713146 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5D24AF8DCB00713146 /* Foundation.framework */; };
 		777A0E6024AF8DD300713146 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5F24AF8DD300713146 /* CoreVideo.framework */; };
 		777A0E6224AF8DDA00713146 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E6124AF8DDA00713146 /* CoreText.framework */; };
@@ -239,7 +238,6 @@
 				777A0E6224AF8DDA00713146 /* CoreText.framework in Frameworks */,
 				777A0E6024AF8DD300713146 /* CoreVideo.framework in Frameworks */,
 				777A0E5E24AF8DCB00713146 /* Foundation.framework in Frameworks */,
-				777A0E5C24AF8DBC00713146 /* OpenGLES.framework in Frameworks */,
 				777A0E5A24AF8DB400713146 /* QuartzCore.framework in Frameworks */,
 				777A0E5824AF8DAD00713146 /* Security.framework in Frameworks */,
 				777A0E5624AF8DA700713146 /* VideoToolbox.framework in Frameworks */,
