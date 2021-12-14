@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 #import "STDownloadable.h"
-#import "STTorrentManagerProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,7 +33,7 @@ NS_SWIFT_NAME(TorrentManagerDelegate)
 @end
 
 NS_SWIFT_NAME(TorrentManager)
-@interface STTorrentManager : NSObject <STTorrentManagerProtocol>
+@interface STTorrentManager : NSObject
 @property (readonly, nonatomic, getter=isSessionActive) BOOL sessionActive;
 
 + (instancetype)sharedInstance

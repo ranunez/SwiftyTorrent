@@ -40,7 +40,6 @@
 		77438328267E924B00AB9F4D /* STTorrentFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7743831A267E924B00AB9F4D /* STTorrentFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77438329267E924B00AB9F4D /* STMagnetURI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7743831B267E924B00AB9F4D /* STMagnetURI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7743832A267E924B00AB9F4D /* TorrentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743831C267E924B00AB9F4D /* TorrentState.swift */; };
-		7743832B267E924B00AB9F4D /* STTorrentManagerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 7743831D267E924B00AB9F4D /* STTorrentManagerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7743832C267E924B00AB9F4D /* STTorrent.h in Headers */ = {isa = PBXBuildFile; fileRef = 7743831E267E924B00AB9F4D /* STTorrent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7743832D267E924B00AB9F4D /* STFileEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7743831F267E924B00AB9F4D /* STFileEntry.m */; };
 		7743832E267E924B00AB9F4D /* STMagnetURI.mm in Sources */ = {isa = PBXBuildFile; fileRef = 77438320267E924B00AB9F4D /* STMagnetURI.mm */; };
@@ -311,7 +310,6 @@
 		7743831A267E924B00AB9F4D /* STTorrentFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTorrentFile.h; sourceTree = "<group>"; };
 		7743831B267E924B00AB9F4D /* STMagnetURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STMagnetURI.h; sourceTree = "<group>"; };
 		7743831C267E924B00AB9F4D /* TorrentState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorrentState.swift; sourceTree = "<group>"; };
-		7743831D267E924B00AB9F4D /* STTorrentManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTorrentManagerProtocol.h; sourceTree = "<group>"; };
 		7743831E267E924B00AB9F4D /* STTorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTorrent.h; sourceTree = "<group>"; };
 		7743831F267E924B00AB9F4D /* STFileEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFileEntry.m; sourceTree = "<group>"; };
 		77438320267E924B00AB9F4D /* STMagnetURI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = STMagnetURI.mm; sourceTree = "<group>"; };
@@ -686,7 +684,6 @@
 		77438315267E924B00AB9F4D /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				7743831D267E924B00AB9F4D /* STTorrentManagerProtocol.h */,
 				77438316267E924B00AB9F4D /* STTorrentManager.h */,
 				77438323267E924B00AB9F4D /* STTorrentManager.mm */,
 				7743831E267E924B00AB9F4D /* STTorrent.h */,
@@ -946,7 +943,6 @@
 				77438326267E924B00AB9F4D /* STDownloadable.h in Headers */,
 				77438329267E924B00AB9F4D /* STMagnetURI.h in Headers */,
 				7743832F267E924B00AB9F4D /* STTorrentState.h in Headers */,
-				7743832B267E924B00AB9F4D /* STTorrentManagerProtocol.h in Headers */,
 				77438325267E924B00AB9F4D /* STFileEntry.h in Headers */,
 				774321AB24AA37EE00777C0A /* TorrentKit.h in Headers */,
 				77438324267E924B00AB9F4D /* STTorrentManager.h in Headers */,
