@@ -6,8 +6,6 @@
 //  Copyright © 2020 Danylo Kostyshyn. All rights reserved.
 //
 
-//swiftlint:disable nesting
-
 import Foundation
 import Combine
 
@@ -22,7 +20,6 @@ protocol SearchDataItem {
 }
 
 extension SearchDataItem {
-    
     var size: String {
         ByteCountFormatter.string(fromByteCount: Int64(sizeBytes), countStyle: .binary)
     }
@@ -49,7 +46,6 @@ extension EZTVDataProvider.Response.Torrent: SearchDataItem {
 }
 
 final class EZTVDataProvider {
-
     static let endpoint = "https://eztv.re/api/"
 
     private let urlSession: URLSession = URLSession.shared

@@ -7,10 +7,11 @@
 //
 
 import SwiftUI
+import TorrentKit
 
 struct TorrentRow: View {
     
-    var model: TorrentRowModel
+    var model: Torrent
     
     var body: some View {
         VStack(alignment: .leading) {

@@ -11,10 +11,8 @@
 		771B700622DA205D00132B5E /* uTorrent-320.png in Resources */ = {isa = PBXBuildFile; fileRef = 771B700522DA205D00132B5E /* uTorrent-320.png */; };
 		7723A22624AF8F1B007629A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7723A22424AF8F1B007629A0 /* SystemConfiguration.framework */; };
 		7729BDB122D8B34D00D02566 /* TorrentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729BDB022D8B34D00D02566 /* TorrentsViewModel.swift */; };
-		7729BDB322D8B38300D02566 /* TorrentRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729BDB222D8B38300D02566 /* TorrentRowModel.swift */; };
 		772A28CB267A5EAC00F02174 /* Torrents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 772A28CA267A5EAC00F02174 /* Torrents.plist */; };
 		772CEA0622DDFC38000CD2BD /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0522DDFC38000CD2BD /* FilesView.swift */; };
-		772CEA0822DDFC41000CD2BD /* FilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0722DDFC41000CD2BD /* FilesViewModel.swift */; };
 		772CEA0A22DDFC47000CD2BD /* FileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0922DDFC47000CD2BD /* FileRow.swift */; };
 		772CEA0C22DDFC4D000CD2BD /* FileRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0B22DDFC4D000CD2BD /* FileRowModel.swift */; };
 		773EFD1A26B241D600DC35A4 /* MobileVLCKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EFD1626B2414100DC35A4 /* MobileVLCKit.xcframework */; platformFilters = (ios, maccatalyst, ); };
@@ -137,10 +135,8 @@
 		771B700522DA205D00132B5E /* uTorrent-320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uTorrent-320.png"; sourceTree = "<group>"; };
 		7723A22424AF8F1B007629A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		7729BDB022D8B34D00D02566 /* TorrentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentsViewModel.swift; sourceTree = "<group>"; };
-		7729BDB222D8B38300D02566 /* TorrentRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentRowModel.swift; sourceTree = "<group>"; };
 		772A28CA267A5EAC00F02174 /* Torrents.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Torrents.plist; sourceTree = "<group>"; };
 		772CEA0522DDFC38000CD2BD /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
-		772CEA0722DDFC41000CD2BD /* FilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewModel.swift; sourceTree = "<group>"; };
 		772CEA0922DDFC47000CD2BD /* FileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRow.swift; sourceTree = "<group>"; };
 		772CEA0B22DDFC4D000CD2BD /* FileRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileRowModel.swift; sourceTree = "<group>"; };
 		773EFD1626B2414100DC35A4 /* MobileVLCKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileVLCKit.xcframework; path = Carthage/Build/MobileVLCKit.xcframework; sourceTree = "<group>"; };
@@ -454,12 +450,10 @@
 				77D8122422CA336A001CA13E /* TorrentsView.swift */,
 				7729BDB022D8B34D00D02566 /* TorrentsViewModel.swift */,
 				7703512122DA513B00A9CC84 /* TorrentRow.swift */,
-				7729BDB222D8B38300D02566 /* TorrentRowModel.swift */,
 				774321E424AA5BBA00777C0A /* SearchView.swift */,
 				774321E624AA705A00777C0A /* SearchViewModel.swift */,
 				77E4CA0724AB747500C21354 /* SearchRow.swift */,
 				772CEA0522DDFC38000CD2BD /* FilesView.swift */,
-				772CEA0722DDFC41000CD2BD /* FilesViewModel.swift */,
 				772CEA0922DDFC47000CD2BD /* FileRow.swift */,
 				772CEA0B22DDFC4D000CD2BD /* FileRowModel.swift */,
 				77AD95422678CAEF00B57B0B /* SettingsView.swift */,
@@ -687,11 +681,9 @@
 				77D8122522CA336A001CA13E /* TorrentsView.swift in Sources */,
 				7729BDB122D8B34D00D02566 /* TorrentsViewModel.swift in Sources */,
 				7703512222DA513B00A9CC84 /* TorrentRow.swift in Sources */,
-				7729BDB322D8B38300D02566 /* TorrentRowModel.swift in Sources */,
 				774321E524AA5BBA00777C0A /* SearchView.swift in Sources */,
 				772CEA0622DDFC38000CD2BD /* FilesView.swift in Sources */,
 				7748DCA924AE3C9000AC5095 /* File+PreviewItem.swift in Sources */,
-				772CEA0822DDFC41000CD2BD /* FilesViewModel.swift in Sources */,
 				77E4CA0824AB747500C21354 /* SearchRow.swift in Sources */,
 				7748DCAB24AE4E1900AC5095 /* File+UTI.swift in Sources */,
 				772CEA0A22DDFC47000CD2BD /* FileRow.swift in Sources */,

@@ -73,23 +73,3 @@ final class TorrentsViewModel: NSObject, ObservableObject, TorrentManagerDelegat
     }
     
 }
-
-#if DEBUG
-extension TorrentsViewModel {
-
-    func addTestTorrentFiles() {
-        torrentManager.add(TorrentFile.test_1())
-        torrentManager.add(TorrentFile.test_2())
-    }
-    
-    func addTestMagnetLinks() {
-        torrentManager.add(MagnetURI.test_1())
-    }
-    
-    func addTestTorrents() {
-        addTestTorrentFiles()
-        addTestMagnetLinks()
-    }
-    
-}
-#endif

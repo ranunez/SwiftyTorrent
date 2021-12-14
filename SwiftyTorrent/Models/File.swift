@@ -29,18 +29,15 @@ class File: NSObject, FileProtocol {
     }
     
     override var description: String {
-        return name //+ " (\(path))"
+        name
     }
 }
 
 extension File: Identifiable {
-    
     public var id: String { path }
-
 }
 
 class Directory: FileProtocol, CustomStringConvertible {
-    
     let name: String
     let path: String
     var sizeDetails: String?
@@ -48,13 +45,19 @@ class Directory: FileProtocol, CustomStringConvertible {
     var files: [FileProtocol]
     
     var allSubDirectories: [Directory] {
-        //swiftlint:disable:next force_cast
         return files.filter({ type(of: $0) == Directory.self }) as! [Directory]
     }
     
     var allFiles: [File] {
-        //swiftlint:disable:next force_cast
         return files.filter({ type(of: $0) == File.self }) as! [File]
+    }
+    
+    var title: String {
+        name
+    }
+    
+    var directory: Directory {
+        self
     }
     
     init(name: String, path: String, files: [FileProtocol]? = nil) {

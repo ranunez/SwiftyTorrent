@@ -11,7 +11,7 @@ import MediaKit
 
 struct FilesView: View {
     
-    var model: FilesViewModel
+    var model: Directory
     @State var selectedItem: File?
     @State var selectedVideo: File?
 

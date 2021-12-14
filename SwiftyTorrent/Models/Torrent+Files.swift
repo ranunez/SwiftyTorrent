@@ -31,5 +31,20 @@ extension Torrent {
         }
         return Torrent.dirsCache[infoHash]!
     }
+    
+    var title: String {
+        return name
+    }
+    
+    var statusDetails: String {
+        let progressString = String(format: "%0.2f %%", progress * 100)
+        return "\(state.symbol) \(state), \(progressString), seeds: \(numberOfSeeds), peers: \(numberOfPeers)"
+    }
+    
+    var connectionDetails: String {
+        let downloadRateString = ByteCountFormatter.string(fromByteCount: Int64(downloadRate), countStyle: .binary)
+        let uploadRateString = ByteCountFormatter.string(fromByteCount: Int64(uploadRate), countStyle: .binary)
+        return "↓ \(downloadRateString), ↑ \(uploadRateString)"
+    }
 
 }

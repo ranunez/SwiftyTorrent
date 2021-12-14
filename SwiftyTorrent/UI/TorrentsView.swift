@@ -31,22 +31,6 @@ struct TorrentsView: View {
                         }.disabled(!torrent.hasMetadata)
                     }
                 }
-                #if DEBUG
-                Section(header: Text("Debug")) {
-                    Button("Add test torrent files") {
-                        model.addTestTorrentFiles()
-                    }
-                    Button("Add test magnet links") {
-                        model.addTestMagnetLinks()
-                    }
-                    Button("Add all test torrents") {
-                        model.addTestTorrents()
-                    }
-                }
-                #if os(iOS)
-                .buttonStyle(BlueButton())
-                #endif
-                #endif
             }
             .refreshable { model.reloadData() }
             .listStyle(PlainListStyle())
@@ -57,13 +41,6 @@ struct TorrentsView: View {
         }
     }
 
-}
-
-struct BlueButton: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .foregroundColor(.blue)
-    }
 }
 
 extension Alert {

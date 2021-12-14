@@ -201,7 +201,6 @@ extension VLCPlayerViewController {
     
     class ControlsView: UIView {
         
-        //swiftlint:disable:next nesting
         enum Action: CaseIterable {
             case dismiss
             case backward

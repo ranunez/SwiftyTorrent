@@ -6,15 +6,12 @@
 //  Copyright © 2020 Danylo Kostyshyn. All rights reserved.
 //
 
-//swiftlint:disable nesting
-
 import Foundation
 import Combine
 
 extension String: Error { }
 
 final class IMDBDataProvider {
-
     private let urlSession: URLSession = URLSession.shared
     private let endpointURL = URL(string: "https://sg.media-imdb.com/")!
     
@@ -67,9 +64,7 @@ final class IMDBDataProvider {
 }
 
 extension IMDBDataProvider {
-    
     struct Response: Decodable {
-        
         enum CodingKeys: String, CodingKey {
             case data = "d"
         }
@@ -82,19 +77,7 @@ extension IMDBDataProvider {
         }
         
         struct DataItem: Decodable {
-            
-            enum CodingKeys: String, CodingKey {
-                case label = "l"
-                case id = "id"
-            }
-            
             let id: String
-            
-            init(from decoder: Decoder) throws {
-                let values = try decoder.container(keyedBy: CodingKeys.self)
-                id = try values.decode(String.self, forKey: .id)
-            }
-            
         }
         
     }
