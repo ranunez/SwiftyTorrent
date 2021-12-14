@@ -19,8 +19,6 @@
 		772CEA0C22DDFC4D000CD2BD /* FileRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0B22DDFC4D000CD2BD /* FileRowModel.swift */; };
 		773EFD1A26B241D600DC35A4 /* MobileVLCKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EFD1626B2414100DC35A4 /* MobileVLCKit.xcframework */; platformFilters = (ios, maccatalyst, ); };
 		773EFD1B26B241D600DC35A4 /* MobileVLCKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773EFD1626B2414100DC35A4 /* MobileVLCKit.xcframework */; platformFilters = (ios, maccatalyst, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		773EFD1F26B241D600DC35A4 /* TVVLCKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773EFD1E26B241D600DC35A4 /* TVVLCKit.xcframework */; platformFilters = (tvos, ); };
-		773EFD2026B241D600DC35A4 /* TVVLCKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773EFD1E26B241D600DC35A4 /* TVVLCKit.xcframework */; platformFilters = (tvos, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		773FF94E22C10278008D58E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FF94D22C10278008D58E4 /* AppDelegate.swift */; };
 		773FF95022C10278008D58E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773FF94F22C10278008D58E4 /* SceneDelegate.swift */; };
 		773FF95422C10279008D58E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773FF95322C10279008D58E4 /* Assets.xcassets */; };
@@ -58,39 +56,11 @@
 		7748DCA624AE3C0500AC5095 /* QLViewHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77ED892324ACE20700D499DD /* QLViewHost.swift */; };
 		7748DCA924AE3C9000AC5095 /* File+PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCA824AE3C9000AC5095 /* File+PreviewItem.swift */; };
 		7748DCAB24AE4E1900AC5095 /* File+UTI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCAA24AE4E1900AC5095 /* File+UTI.swift */; };
-		7748DCB524AE702E00AC5095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCB424AE702E00AC5095 /* AppDelegate.swift */; };
-		7748DCBF24AE703000AC5095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7748DCBD24AE703000AC5095 /* LaunchScreen.storyboard */; };
-		7748DCC524AE70A000AC5095 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC2AF322D896F100A544AA /* AppCoordinator.swift */; };
-		7748DCC624AE70A900AC5095 /* Torrent+Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321B824AA495700777C0A /* Torrent+Files.swift */; };
-		7748DCC724AE70A900AC5095 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321B624AA495700777C0A /* File.swift */; };
-		7748DCC824AE70A900AC5095 /* File+PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCA824AE3C9000AC5095 /* File+PreviewItem.swift */; };
-		7748DCC924AE70A900AC5095 /* File+UTI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCAA24AE4E1900AC5095 /* File+UTI.swift */; };
-		7748DCCA24AE70A900AC5095 /* IMDBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321E824AA9A0E00777C0A /* IMDBDataProvider.swift */; };
-		7748DCCB24AE70A900AC5095 /* EZTVDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321EA24AA9A7000777C0A /* EZTVDataProvider.swift */; };
-		7748DCCC24AE70A900AC5095 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321E224AA58F600777C0A /* MainView.swift */; };
-		7748DCCD24AE70A900AC5095 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321E424AA5BBA00777C0A /* SearchView.swift */; };
-		7748DCCE24AE70A900AC5095 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774321E624AA705A00777C0A /* SearchViewModel.swift */; };
-		7748DCCF24AE70A900AC5095 /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4CA0724AB747500C21354 /* SearchRow.swift */; };
-		7748DCD024AE70A900AC5095 /* TorrentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D8122422CA336A001CA13E /* TorrentsView.swift */; };
-		7748DCD124AE70A900AC5095 /* TorrentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729BDB022D8B34D00D02566 /* TorrentsViewModel.swift */; };
-		7748DCD224AE70A900AC5095 /* TorrentRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703512122DA513B00A9CC84 /* TorrentRow.swift */; };
-		7748DCD324AE70A900AC5095 /* TorrentRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7729BDB222D8B38300D02566 /* TorrentRowModel.swift */; };
-		7748DCD424AE70A900AC5095 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0522DDFC38000CD2BD /* FilesView.swift */; };
-		7748DCD524AE70A900AC5095 /* FilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0722DDFC41000CD2BD /* FilesViewModel.swift */; };
-		7748DCD624AE70A900AC5095 /* FileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0922DDFC47000CD2BD /* FileRow.swift */; };
-		7748DCD724AE70A900AC5095 /* FileRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772CEA0B22DDFC4D000CD2BD /* FileRowModel.swift */; };
-		7748DCD924AE713500AC5095 /* MediaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */; };
-		7748DCDA24AE713500AC5095 /* MediaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7748DCDD24AE713500AC5095 /* TorrentKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774321A724AA37ED00777C0A /* TorrentKit.framework */; };
-		7748DCDE24AE713500AC5095 /* TorrentKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774321A724AA37ED00777C0A /* TorrentKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7748DCE324AE728700AC5095 /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7748DCE224AE728700AC5095 /* PreviewItem.swift */; };
 		7774227E267BA87A008FAA57 /* MediaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */; };
 		77742295267C010F008FAA57 /* StubTorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742294267C010F008FAA57 /* StubTorrentManager.swift */; };
-		77742296267C010F008FAA57 /* StubTorrentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742294267C010F008FAA57 /* StubTorrentManager.swift */; };
 		77742299267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */; };
-		7774229A267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77742298267C0185008FAA57 /* StubIMDBDataProvider.swift */; };
 		7774229C267C0191008FAA57 /* StubEZTVDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */; };
-		7774229D267C0191008FAA57 /* StubEZTVDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7774229B267C0191008FAA57 /* StubEZTVDataProvider.swift */; };
 		777A0E4E24AF8D8C00713146 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E4D24AF8D8C00713146 /* libxml2.tbd */; };
 		777A0E5024AF8D9300713146 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E4F24AF8D9300713146 /* libiconv.tbd */; };
 		777A0E5224AF8D9A00713146 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E5124AF8D9A00713146 /* libc++.tbd */; };
@@ -109,9 +79,7 @@
 		777A0E6C24AF8DFC00713146 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E6B24AF8DFC00713146 /* AudioToolbox.framework */; };
 		777A0E6E24AF8E0200713146 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 777A0E6D24AF8E0200713146 /* AVFoundation.framework */; };
 		77AD95432678CAEF00B57B0B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD95422678CAEF00B57B0B /* SettingsView.swift */; };
-		77AD95442678CAEF00B57B0B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD95422678CAEF00B57B0B /* SettingsView.swift */; };
 		77AD95472678CAFB00B57B0B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD95462678CAFB00B57B0B /* SettingsViewModel.swift */; };
-		77AD95482678CAFB00B57B0B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AD95462678CAFB00B57B0B /* SettingsViewModel.swift */; };
 		77D8122522CA336A001CA13E /* TorrentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D8122422CA336A001CA13E /* TorrentsView.swift */; };
 		77E4CA0824AB747500C21354 /* SearchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E4CA0724AB747500C21354 /* SearchRow.swift */; };
 		77FC2AF422D896F100A544AA /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FC2AF322D896F100A544AA /* AppCoordinator.swift */; };
@@ -139,20 +107,6 @@
 			remoteGlobalIDString = 7748DC7324AE38EA00AC5095;
 			remoteInfo = MediaKit;
 		};
-		7748DCDB24AE713500AC5095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 773FF94222C10278008D58E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7748DC7324AE38EA00AC5095;
-			remoteInfo = MediaKit;
-		};
-		7748DCDF24AE713500AC5095 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 773FF94222C10278008D58E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 774321A624AA37ED00777C0A;
-			remoteInfo = TorrentKit;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,7 +116,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				773EFD2026B241D600DC35A4 /* TVVLCKit.xcframework in Embed Frameworks */,
 				773EFD1B26B241D600DC35A4 /* MobileVLCKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -176,18 +129,6 @@
 			files = (
 				7748DC7C24AE38EA00AC5095 /* MediaKit.framework in Embed Frameworks */,
 				774321B024AA37EE00777C0A /* TorrentKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7748DCE124AE713500AC5095 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7748DCDE24AE713500AC5095 /* TorrentKit.framework in Embed Frameworks */,
-				7748DCDA24AE713500AC5095 /* MediaKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,10 +186,6 @@
 		7748DC7724AE38EA00AC5095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7748DCA824AE3C9000AC5095 /* File+PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+PreviewItem.swift"; sourceTree = "<group>"; };
 		7748DCAA24AE4E1900AC5095 /* File+UTI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+UTI.swift"; sourceTree = "<group>"; };
-		7748DCB224AE702E00AC5095 /* SwiftyTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7748DCB424AE702E00AC5095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7748DCBE24AE703000AC5095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7748DCC024AE703000AC5095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7748DCE224AE728700AC5095 /* PreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
 		776FD9F622C3B43800CD7CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		77742294267C010F008FAA57 /* StubTorrentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubTorrentManager.swift; sourceTree = "<group>"; };
@@ -319,18 +256,8 @@
 				777A0E5624AF8DA700713146 /* VideoToolbox.framework in Frameworks */,
 				777A0E5424AF8DA100713146 /* libbz2.tbd in Frameworks */,
 				777A0E5224AF8D9A00713146 /* libc++.tbd in Frameworks */,
-				773EFD1F26B241D600DC35A4 /* TVVLCKit.xcframework in Frameworks */,
 				777A0E5024AF8D9300713146 /* libiconv.tbd in Frameworks */,
 				777A0E4E24AF8D8C00713146 /* libxml2.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7748DCAF24AE702E00AC5095 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7748DCDD24AE713500AC5095 /* TorrentKit.framework in Frameworks */,
-				7748DCD924AE713500AC5095 /* MediaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,14 +274,6 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		773A410124AF9462002E75CD /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7748DCBD24AE703000AC5095 /* LaunchScreen.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		773FF94122C10278008D58E4 = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +282,6 @@
 				774321A824AA37EE00777C0A /* TorrentKit */,
 				7748DC7524AE38EA00AC5095 /* MediaKit */,
 				773FF94C22C10278008D58E4 /* SwiftyTorrent */,
-				7748DCB324AE702E00AC5095 /* SwiftyTV */,
 				773FF94B22C10278008D58E4 /* Products */,
 				773FF96722C105CE008D58E4 /* Frameworks */,
 			);
@@ -375,7 +293,6 @@
 				773FF94A22C10278008D58E4 /* SwiftyTorrent.app */,
 				774321A724AA37ED00777C0A /* TorrentKit.framework */,
 				7748DC7424AE38EA00AC5095 /* MediaKit.framework */,
-				7748DCB224AE702E00AC5095 /* SwiftyTV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -537,16 +454,6 @@
 			path = QuickLook;
 			sourceTree = "<group>";
 		};
-		7748DCB324AE702E00AC5095 /* SwiftyTV */ = {
-			isa = PBXGroup;
-			children = (
-				7748DCB424AE702E00AC5095 /* AppDelegate.swift */,
-				773A410124AF9462002E75CD /* Resources */,
-				7748DCC024AE703000AC5095 /* Info.plist */,
-			);
-			path = SwiftyTV;
-			sourceTree = "<group>";
-		};
 		77742297267C0119008FAA57 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,27 +576,6 @@
 			productReference = 7748DC7424AE38EA00AC5095 /* MediaKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7748DCB124AE702E00AC5095 /* SwiftyTV */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7748DCC424AE703100AC5095 /* Build configuration list for PBXNativeTarget "SwiftyTV" */;
-			buildPhases = (
-				7748DCAE24AE702E00AC5095 /* Sources */,
-				7748DCAF24AE702E00AC5095 /* Frameworks */,
-				7748DCB024AE702E00AC5095 /* Resources */,
-				7748DCE124AE713500AC5095 /* Embed Frameworks */,
-				77742282267BA974008FAA57 /* Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7748DCDC24AE713500AC5095 /* PBXTargetDependency */,
-				7748DCE024AE713500AC5095 /* PBXTargetDependency */,
-			);
-			name = SwiftyTV;
-			productName = SwiftyTV;
-			productReference = 7748DCB224AE702E00AC5095 /* SwiftyTV.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -710,9 +596,6 @@
 						LastSwiftMigration = 1150;
 					};
 					7748DC7324AE38EA00AC5095 = {
-						CreatedOnToolsVersion = 11.5;
-					};
-					7748DCB124AE702E00AC5095 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -739,7 +622,6 @@
 			projectRoot = "";
 			targets = (
 				773FF94922C10278008D58E4 /* SwiftyTorrent */,
-				7748DCB124AE702E00AC5095 /* SwiftyTV */,
 				774321A624AA37ED00777C0A /* TorrentKit */,
 				7748DC7324AE38EA00AC5095 /* MediaKit */,
 			);
@@ -782,36 +664,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7748DCB024AE702E00AC5095 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7748DCBF24AE703000AC5095 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		77742281267BA960008FAA57 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		77742282267BA974008FAA57 /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -889,38 +745,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7748DCAE24AE702E00AC5095 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77AD95442678CAEF00B57B0B /* SettingsView.swift in Sources */,
-				7748DCCE24AE70A900AC5095 /* SearchViewModel.swift in Sources */,
-				7748DCCD24AE70A900AC5095 /* SearchView.swift in Sources */,
-				7748DCD424AE70A900AC5095 /* FilesView.swift in Sources */,
-				7748DCC924AE70A900AC5095 /* File+UTI.swift in Sources */,
-				7774229D267C0191008FAA57 /* StubEZTVDataProvider.swift in Sources */,
-				7748DCCC24AE70A900AC5095 /* MainView.swift in Sources */,
-				7748DCCF24AE70A900AC5095 /* SearchRow.swift in Sources */,
-				7748DCC524AE70A000AC5095 /* AppCoordinator.swift in Sources */,
-				7774229A267C0185008FAA57 /* StubIMDBDataProvider.swift in Sources */,
-				7748DCCA24AE70A900AC5095 /* IMDBDataProvider.swift in Sources */,
-				7748DCD324AE70A900AC5095 /* TorrentRowModel.swift in Sources */,
-				7748DCD124AE70A900AC5095 /* TorrentsViewModel.swift in Sources */,
-				7748DCD624AE70A900AC5095 /* FileRow.swift in Sources */,
-				7748DCC724AE70A900AC5095 /* File.swift in Sources */,
-				7748DCD024AE70A900AC5095 /* TorrentsView.swift in Sources */,
-				7748DCD524AE70A900AC5095 /* FilesViewModel.swift in Sources */,
-				7748DCC824AE70A900AC5095 /* File+PreviewItem.swift in Sources */,
-				7748DCC624AE70A900AC5095 /* Torrent+Files.swift in Sources */,
-				77742296267C010F008FAA57 /* StubTorrentManager.swift in Sources */,
-				7748DCB524AE702E00AC5095 /* AppDelegate.swift in Sources */,
-				7748DCCB24AE70A900AC5095 /* EZTVDataProvider.swift in Sources */,
-				77AD95482678CAFB00B57B0B /* SettingsViewModel.swift in Sources */,
-				7748DCD724AE70A900AC5095 /* FileRowModel.swift in Sources */,
-				7748DCD224AE70A900AC5095 /* TorrentRow.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -934,16 +758,6 @@
 			target = 7748DC7324AE38EA00AC5095 /* MediaKit */;
 			targetProxy = 7748DC7924AE38EA00AC5095 /* PBXContainerItemProxy */;
 		};
-		7748DCDC24AE713500AC5095 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7748DC7324AE38EA00AC5095 /* MediaKit */;
-			targetProxy = 7748DCDB24AE713500AC5095 /* PBXContainerItemProxy */;
-		};
-		7748DCE024AE713500AC5095 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 774321A624AA37ED00777C0A /* TorrentKit */;
-			targetProxy = 7748DCDF24AE713500AC5095 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -951,14 +765,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				773FF95922C10279008D58E4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		7748DCBD24AE703000AC5095 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7748DCBE24AE703000AC5095 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1264,52 +1070,6 @@
 			};
 			name = Release;
 		};
-		7748DCC124AE703000AC5095 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DBR2MMCRF5;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = SwiftyTV/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.kostyshyn.SwiftyTV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Debug;
-		};
-		7748DCC224AE703000AC5095 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DBR2MMCRF5;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
-				INFOPLIST_FILE = SwiftyTV/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.kostyshyn.SwiftyTV;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 3;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1345,15 +1105,6 @@
 			buildConfigurations = (
 				7748DC7D24AE38EA00AC5095 /* Debug */,
 				7748DC7E24AE38EA00AC5095 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7748DCC424AE703100AC5095 /* Build configuration list for PBXNativeTarget "SwiftyTV" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7748DCC124AE703000AC5095 /* Debug */,
-				7748DCC224AE703000AC5095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

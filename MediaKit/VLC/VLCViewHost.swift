@@ -7,11 +7,7 @@
 //
 
 import SwiftUI
-#if os(iOS)
 import MobileVLCKit
-#elseif os(tvOS)
-import TVVLCKit
-#endif
 
 public struct VLCViewHost: UIViewControllerRepresentable {
     
