@@ -9,8 +9,6 @@
 import Foundation
 
 public protocol PreviewItem {
-    
     var previewItemURL: URL? { get }
     var previewItemTitle: String? { get }
-    
 }

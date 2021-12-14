@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-#if canImport(QuickLook)
 import QuickLook
 
 class QLPreviewItemWrapper: NSObject, QLPreviewItem {
@@ -53,7 +52,6 @@ public struct QLViewHost: UIViewControllerRepresentable {
     }
 
     public class Coordinator: NSObject, QLPreviewControllerDataSource, QLPreviewControllerDelegate {
-        
         var previewItem: PreviewItem
         
         init(previewItem: PreviewItem) {
@@ -71,4 +69,3 @@ public struct QLViewHost: UIViewControllerRepresentable {
         
     }
 }
-#endif

@@ -494,7 +494,7 @@
 				77F5045522C0D2A400CF042B /* xml_parse.cpp */,
 			);
 			name = src;
-			path = ../../libtorrent/src/src;
+			path = ../../../TorrentKit/src;
 			sourceTree = "<group>";
 		};
 		77F503EF22C0D2A400CF042B /* kademlia */ = {
@@ -530,7 +530,7 @@
 				77F504F922C0D8CE00CF042B /* src */,
 			);
 			name = ed25519;
-			path = ../../libtorrent/src/ed25519;
+			path = ../../../TorrentKit/ed25519;
 			sourceTree = "<group>";
 		};
 		77F504F922C0D8CE00CF042B /* src */ = {

@@ -10,16 +10,12 @@ import TorrentKit
 
 extension Torrent {
     
-    private var torrentManager: TorrentManagerProtocol {
-        TorrentManager.shared()
-    }
-    
     private static var filesCache = [Data: [FileEntry]]()
     private static var dirsCache = [Data: Directory]()
     
     private var fileEntries: [FileEntry] {
         if Torrent.filesCache[infoHash] == nil {
-            Torrent.filesCache[infoHash] = torrentManager.filesForTorrent(withHash: infoHash)
+            Torrent.filesCache[infoHash] = TorrentManager.shared().filesForTorrent(withHash: infoHash)
         }
         return Torrent.filesCache[infoHash]!
     }

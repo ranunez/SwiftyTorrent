@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct SettingsView: View {
-    
     @ObservedObject var model: SettingsViewModel
 
     var body: some View {
@@ -39,7 +38,6 @@ struct SettingsView: View {
 }
 
 struct SettingsRow: View {
-    
     let title: String
     @Binding var value: String
     
@@ -55,7 +53,6 @@ struct SettingsRow: View {
 }
 
 struct SettingsActionRow: View {
-    
     let title: String
     let role: ButtonRole?
     let action: () -> Void
@@ -69,11 +66,3 @@ struct SettingsActionRow: View {
     }
     
 }
-
-#if DEBUG
-struct SettingsView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingsView(model: SettingsViewModel())
-    }
-}
-#endif

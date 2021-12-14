@@ -13,10 +13,6 @@
 #import "libtorrent/magnet_uri.hpp"
 #import "libtorrent/string_view.hpp"
 
-#if DEBUG
-#import "STTorrentFile.h"
-#endif
-
 @interface STMagnetURI ()
 @property (readwrite, strong, nonatomic) NSURL *magnetURI;
 @end
@@ -43,23 +39,5 @@
         NSLog(@"%s, error_code: %s", __FUNCTION__, ec.message().c_str());
     }
 }
-
-#pragma mark - Test magnet links
-
-#if DEBUG
-+ (STMagnetURI *)testMagnetAtIndex:(NSUInteger)index {
-    NSArray *torrents = [STTorrentFile torrentsFromPlist];
-    NSArray *torrent = torrents[index];
-    
-    NSString *magnetLink = torrent[1];
-    NSURL *magentURI = [NSURL URLWithString:magnetLink];
-    return [[STMagnetURI alloc] initWithMagnetURI:magentURI];
-
-}
-
-+ (STMagnetURI *)test_1 {
-    return [self testMagnetAtIndex: 2];
-}
-#endif
 
 @end

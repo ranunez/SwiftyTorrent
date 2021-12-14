@@ -15,10 +15,6 @@ final class AppCoordinator {
     
     private var window: UIWindow!
     
-    private var torrentManager: TorrentManagerProtocol {
-        TorrentManager.shared()
-    }
-    
     private var cancellables = [Cancellable]()
     
     init(window: UIWindow) {
@@ -38,7 +34,7 @@ final class AppCoordinator {
 
     func handleOpenURLContexts(_ URLContexts: Set<UIOpenURLContext>) {
         guard let URLContext = URLContexts.first else { return }
-        torrentManager.open(URLContext.url)
+        TorrentManager.shared().open(URLContext.url)
     }
 
     // MARK: - ApplicationCoordinator
